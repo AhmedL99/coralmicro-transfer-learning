@@ -50,7 +50,7 @@ HttpServer::Content UriHandler(const char* uri) {
                              CameraFormatBpp(CameraFormat::kRgb));
     auto fmt = CameraFrameFormat{
         CameraFormat::kRgb,       CameraFilterMethod::kBilinear,
-        CameraRotation::k0,       CameraTask::kWidth,
+        CameraRotation::k270,       CameraTask::kWidth,
         CameraTask::kHeight,
         /*preserve_ratio=*/false, buf.data(),
         /*while_balance=*/true};
