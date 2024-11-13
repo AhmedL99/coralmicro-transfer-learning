@@ -60,7 +60,7 @@ HttpServer::Content UriHandler(const char* uri) {
     }
 
     std::vector<uint8_t> jpeg;
-    JpegCompressRgb(buf.data(), fmt.width, fmt.height, /*quality=*/75, &jpeg);
+    JpegCompressRgb(buf.data(), fmt.width, fmt.height, /*quality=*/100, &jpeg);
     // [end-snippet:jpeg]
     return jpeg;
   }
