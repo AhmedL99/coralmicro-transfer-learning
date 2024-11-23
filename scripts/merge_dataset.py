@@ -32,6 +32,8 @@ ahmed_imgs = coco_ahmed.loadImgs(ids=ahmed_imgs_ids)
 
 
 for img in ahmed_imgs: 
+
+    print(img["file_name"][7:])
     images.append(img)
     #print(img["id"])
     annotations.append(coco_ahmed.loadAnns(ids=img["id"]))
@@ -61,8 +63,8 @@ for img in not_ahmed_imgs:
         ann[0]["id"] = anns_idx
         annotations.append(ann)
         anns_idx += 1
-        print(ann)
-        print(img_idx)
+        #print(ann)
+        #print(img_idx)
 
     img["id"] = img_idx
     img_idx += 1
